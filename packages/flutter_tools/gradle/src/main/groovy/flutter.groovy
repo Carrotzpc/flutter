@@ -106,6 +106,11 @@ class FlutterExtension {
 // for those that have, FGP's `build.gradle.kts`  takes care of this.
 buildscript {
     repositories {
+        maven { url "https://maven.aliyun.com/repository/releases"}
+        maven { url "https://maven.aliyun.com/repository/google"}
+        maven { url "https://maven.aliyun.com/repository/central"}
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin"}
+        maven { url "https://maven.aliyun.com/repository/public"}
         google()
         mavenCentral()
     }

@@ -11,6 +11,11 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper
 // for those that have, FGP's `build.gradle.kts`  takes care of this.
 buildscript {
     repositories {
+        maven { setUrl("https://maven.aliyun.com/repository/releases") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { setUrl("https://maven.aliyun.com/repository/public") }
         google()
         mavenCentral()
     }
