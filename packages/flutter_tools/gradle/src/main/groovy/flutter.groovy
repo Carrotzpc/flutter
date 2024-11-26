@@ -1240,7 +1240,7 @@ class FlutterPlugin implements Plugin<Project> {
                     Integer abiVersionCode = ABI_VERSION.get(output.getFilter(OutputFile.ABI))
                     if (abiVersionCode != null) {
                         output.versionCodeOverride =
-                            abiVersionCode * 1000 + variant.versionCode
+                            1000 + variant.versionCode
                     }
                 }
             }
